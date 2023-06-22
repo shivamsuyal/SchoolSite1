@@ -1,16 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Site 1</title>
 
-    <!-- JS -->
-    <script type="module" src="/src/home/index.ts" defer></script>
-    
-  </head>
-  <body>
-    <div>HELLO WORLD</div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site 1</title>
+
+  <!-- JS -->
+  <script type="module" src="/src/home/index.ts" defer></script>
+
+</head>
+
+<body>
+  <nav></nav>
+  <section id="homePage">
+    <!-- gallery area -->
+    <div id="mainGallery" class="glide">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide">
+            <img src="/public/images/demo.jpg" />
+          </li>
+          <li class="glide__slide">
+            <img src="/public/images/demo.jpg" />
+          </li>
+          <li class="glide__slide">
+            <img src="/public/images/demo.jpg" />
+          </li>
+          <li class="glide__slide">
+            <img src="/public/images/demo.jpg" />
+          </li>
+          <li class="glide__slide">
+            <img src="/public/images/demo.jpg" />
+          </li>
+        </ul>
+      </div>
+      <div class="glide__bullets" data-glide-el="controls[nav]">
+        <button class="glide__bullet" data-glide-dir="=0"></button>
+        <button class="glide__bullet" data-glide-dir="=1"></button>
+        <button class="glide__bullet" data-glide-dir="=2"></button>
+        <button class="glide__bullet" data-glide-dir="=3"></button>
+        <button class="glide__bullet" data-glide-dir="=4"></button>
+      </div>
+    </div>
+
+    <!-- right side text area -->
+    <div id="sideRectangle-wapper">
+      <div id="sideRectangle">
+        <p>Your School for <br>Life</p>
+        <p>Graphic Era Hill University, Clement Town, Dehradun, Uttarakhand</p>
+        <button>
+          <span>Start Your Story</span>
+          <svg width="38" height="36" viewBox="0 0 38 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1_79)">
+              <path
+                d="M19 0C23.9065 0 28.6121 1.89642 32.0815 5.27208C35.5509 8.64773 37.5 13.2261 37.5 18C37.5 22.7739 35.5509 27.3523 32.0815 30.7279C28.6121 34.1036 23.9065 36 19 36C14.0935 36 9.38795 34.1036 5.91852 30.7279C2.4491 27.3523 0.5 22.7739 0.5 18C0.5 13.2261 2.4491 8.64773 5.91852 5.27208C9.38795 1.89642 14.0935 0 19 0ZM10.9062 16.875C10.5996 16.875 10.3055 16.9935 10.0887 17.2045C9.87182 17.4155 9.75 17.7016 9.75 18C9.75 18.2984 9.87182 18.5845 10.0887 18.7955C10.3055 19.0065 10.5996 19.125 10.9062 19.125H24.3026L19.3376 23.9535C19.2301 24.0581 19.1448 24.1823 19.0867 24.3189C19.0285 24.4556 18.9985 24.6021 18.9985 24.75C18.9985 24.8979 19.0285 25.0444 19.0867 25.1811C19.1448 25.3177 19.2301 25.4419 19.3376 25.5465C19.4451 25.6511 19.5728 25.7341 19.7132 25.7907C19.8537 25.8473 20.0042 25.8764 20.1562 25.8764C20.3083 25.8764 20.4588 25.8473 20.5993 25.7907C20.7397 25.7341 20.8674 25.6511 20.9749 25.5465L27.9124 18.7965C28.0201 18.692 28.1055 18.5679 28.1638 18.4312C28.2221 18.2945 28.2521 18.148 28.2521 18C28.2521 17.852 28.2221 17.7055 28.1638 17.5688C28.1055 17.4321 28.0201 17.308 27.9124 17.2035L20.9749 10.4535C20.8674 10.3489 20.7397 10.2659 20.5993 10.2093C20.4588 10.1527 20.3083 10.1236 20.1562 10.1236C20.0042 10.1236 19.8537 10.1527 19.7132 10.2093C19.5728 10.2659 19.4451 10.3489 19.3376 10.4535C19.2301 10.5581 19.1448 10.6823 19.0867 10.8189C19.0285 10.9556 18.9985 11.1021 18.9985 11.25C18.9985 11.3979 19.0285 11.5444 19.0867 11.6811C19.1448 11.8177 19.2301 11.9419 19.3376 12.0465L24.3026 16.875H10.9062Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_1_79">
+                <rect width="37" height="36" fill="white" transform="translate(0.5)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+      </div>
+      <span id="traingle"></span>
+    </div>
+  </section>
+</body>
+
 </html>

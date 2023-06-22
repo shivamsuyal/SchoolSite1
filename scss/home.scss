@@ -1,1 +1,95 @@
-@import "./comman", "./font", "./variables"
+@import "./comman", "./font", "./variables";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
+nav {
+    background-color: $navBar-color;
+    position: fixed;
+    inset: 0;
+    transform: translateY(-100%);
+    height: $navBar-height;
+    z-index: 100;
+    width: 100%;
+}
+
+#mainGallery{
+    pointer-events: none;
+    img{
+        height: 100svh;
+        width: 100%;
+        object-fit: cover;
+    }
+    .glide__bullets{
+        transform: none;
+        left: initial;
+        right: 1em;
+        .glide__bullet{
+            $dotSize: 18px;
+            min-width: $dotSize;
+            min-height: $dotSize;
+            border: 3px solid white;
+            background-color: transparent;
+        }
+        .glide__bullet--active{
+            background-color: $active-gallery-dot-color;
+        }
+    }
+}
+
+#sideRectangle-wapper {
+    $this-bgColor: hsla(0, 0%, 50%, 0.9);
+    position: absolute;
+    min-width: 30%;
+    min-height: 40%;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    transform: translateX(-100%);
+    #sideRectangle {
+        background-color: $this-bgColor;
+        color: #fff;
+        font-family: Poppins;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        p {
+            &:nth-of-type(1) {
+                font-size: 35px;
+                font-weight: 600;
+                text-transform: uppercase;
+                transform: translateX(1.5rem);
+            }
+            &:nth-of-type(2) {
+                font-size: 20px;
+                font-weight: 400;
+                transform: translateX(3rem);
+            }
+        }
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.4rem;
+            background: #5a5a5a;
+            padding: 0.4rem 1rem;
+            border-radius: $border-sm;
+            align-self: flex-end;
+            span {
+                font-size: 17px;
+            }
+            svg {
+                height: 1.4rem;
+                width: auto;
+                overflow: visible;
+            }
+        }
+    }
+    #traingle {
+        width: 30%;
+        display: inline-block;
+        background-color: $this-bgColor;
+        clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    }
+}
